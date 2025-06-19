@@ -18,15 +18,15 @@ def job():
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     dates = [(start_date + timedelta(days=i)).strftime("%B %d") for i in range(5)]
 
-    subject = "Weekly Work Hours Report (Monday–Thursday)"
+    subject = "Weekly Work Hours Report (Monday–Friday)"
     body = f"""Greetings ma'am,
 
 I hope you're doing well. I am writing to report the hours I have worked this week, from Monday through Thursday, totaling 40 hours. Below is the breakdown of my work schedule:
-{days[0]} ({dates[0]}): 8:00 AM – 12:00 PM, 1:00 PM – 5:00 PM (8 hours)
-{days[1]} ({dates[1]}): 8:00 AM – 12:00 PM, 1:00 PM – 5:00 PM (8 hours)
-{days[2]} ({dates[2]}): 8:00 AM – 12:00 PM, 1:00 PM – 5:00 PM (8 hours)
-{days[3]} ({dates[3]}): 8:00 AM – 12:00 PM, 1:00 PM – 5:00 PM (8 hours)
-{days[4]} ({dates[4]}): 8:00 AM – 12:00 PM, 1:00 PM – 5:00 PM (8 hours)
+{days[0]} ({dates[0]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
+{days[1]} ({dates[1]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
+{days[2]} ({dates[2]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
+{days[3]} ({dates[3]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
+{days[4]} ({dates[4]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
 
 Yours sincerely,  
 Ajyol Dhamala
