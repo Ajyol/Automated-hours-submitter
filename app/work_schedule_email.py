@@ -14,6 +14,7 @@ def job():
     receiver_email = os.getenv("RECEIVER_EMAIL")
     password = os.getenv("EMAIL_PASSWORD")
 
+    # Compute start of week (Monday)
     start_date = datetime.now() - timedelta(days=datetime.now().weekday())
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
     dates = [(start_date + timedelta(days=i)).strftime("%B %d") for i in range(5)]
@@ -21,16 +22,18 @@ def job():
     subject = "Weekly Work Hours Report (Monday–Friday)"
     body = f"""Greetings ma'am,
 
-I hope you're doing well. I am writing to report the hours I have worked this week, from Monday through Thursday, totaling 40 hours. Below is the breakdown of my work schedule:
-{days[0]} ({dates[0]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
-{days[1]} ({dates[1]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
-{days[2]} ({dates[2]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
-{days[3]} ({dates[3]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
-{days[4]} ({dates[4]}): 8:00 AM – 12:00 PM, 1:30 PM – 5:00 PM, Lunch break: 12:00 PM - 12:30 PM (8 hours)
+    I hope you're doing well. I am writing to report the hours I have worked this week, totaling 20 hours. Below is the breakdown of my work schedule:
 
-Yours sincerely,  
-Ajyol Dhamala
-"""
+    {days[0]} ({dates[0]}): 8:00 AM – 11:30 AM, 4:00 PM – 6:00 PM (5.5 hours)
+    {days[1]} ({dates[1]}): 8:00 AM – 11:30 AM, 3:30 PM - 5:30 PM (5.5 hours)
+    {days[2]} ({dates[2]}): 8:00 AM – 11:30 AM, 3:30 PM – 5:00 PM (5 hours)
+    {days[3]} ({dates[3]}): 1:00 PM – 5:00 PM (4 hours)
+
+    Total: 20 hours
+
+    Yours sincerely,  
+    Ajyol Dhamala
+    """
 
     msg = MIMEMultipart()
     msg["From"] = f"Ajyol Dhamala <{sender_email}>"
@@ -47,9 +50,9 @@ Ajyol Dhamala
         print(f"❌ Failed to send email: {e}")
 
 
-schedule.every().friday.at("17:00").do(job)
+schedule.every().thursday.at("17:00").do(job)
 
-print("⏳ Scheduler running... will send email every Friday at 5:00 PM.")
+print("⏳ Scheduler running... will send email every Thursday at 5:00 PM.")
 
 while True:
     schedule.run_pending()

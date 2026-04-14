@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68f22655-ad5e-457d-a46f-6693f38de010" name="Changes" comment="Automated hours submitter.">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ScheduleSender.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="68f22655-ad5e-457d-a46f-6693f38de010" name="Changes" comment="Lunch break time slot added to email.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/work_schedule_email.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/work_schedule_email.py" afterDir="false" />
     </list>
@@ -14,6 +12,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +35,9 @@
     &quot;accountId&quot;: &quot;0e3e36c2-852d-4334-a9e1-9be4f3da9a6e&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -106,11 +114,20 @@
       <option name="project" value="LOCAL" />
       <updated>1748011771162</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lunch break time slot added to email.">
+      <option name="closed" value="true" />
+      <created>1750362800700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750362800700</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Automated hours submitter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Automated hours submitter." />
+    <MESSAGE value="Lunch break time slot added to email." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lunch break time slot added to email." />
   </component>
 </project>
